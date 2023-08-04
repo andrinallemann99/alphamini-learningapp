@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    
+    <LinearLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+        <TextView
+            android:id="@+id/tvTimer"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="00:30"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Punkte:"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/tvPoints"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_height="wrap_content"
+            android:text="MM"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frage 1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/layoutTop"
+        android:layout_centerHorizontal="true"
+
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="0"
+        android:layout_below="@+id/questionNumber"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="question"
+        android:textSize="25sp"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="20dp"
+                android:insetRight="20dp"
+                android:text="Button"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/background"
+                app:strokeWidth="1dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="20dp"
+                android:insetRight="20dp"
+                android:text="Button"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/background"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="20dp"
+                android:insetRight="20dp"
+                android:text="Button"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/background"
+                app:strokeWidth="1dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetLeft="20dp"
+                android:insetRight="20dp"
+                android:text="Button"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="25dp"
+                app:strokeColor="@color/background"
+                app:strokeWidth="1dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:text="@string/tapScreen"
+        android:gravity="center|bottom"
+        >
+    </TextView>-->
+
+    <LinearLayout
+        android:id="@+id/fullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tapScreen"
+            android:gravity="center|bottom"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_back_green"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvInfoQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Frage"
+            android:layout_marginTop="20dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            />
+
+        <TextView
+            android:id="@+id/tvInfoAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Antwort"
+            android:layout_marginTop="20dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom|start"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/tapScreen"
+                android:gravity="bottom|center_horizontal"
+                android:paddingBottom="10dp"
+                />
+            <ImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/globus"
+                android:layout_gravity="bottom|end"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=""
+        android:backgroundTint="@color/mini_infofield"
+        android:visibility="gone"
+        app:cornerRadius="20dp"
+        />-->
+
+
+
+
+</RelativeLayout>

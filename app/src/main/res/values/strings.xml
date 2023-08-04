@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Lerne mit Alpha Mini!</string>
+    <string name="geografie">Ortskunde</string>
+    <string name="mathematik">Mensch und Tier</string>
+    <string name="start_quiz">Start</string>
+    <string name="selectTopicToast">Bitte wähle eine Kategorie!</string>
+    <string name="enterUsername">Gib einen Namen an!</string>
+    <string name="tvEndPoints">Dein Resultat!</string>
+    <string name="backButton">Neues Spiel!</string>
+    <string name="tapScreen">Tippen zum Weiterkommen!</string>
+</resources>
